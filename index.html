@@ -9,18 +9,21 @@
   </head>
   <body>
     <div class="container">
-        <div class="todo-app">
-            <h2>To-do List <img src="./assets/images/todo-list.png" class="to-do-img" alt=""></h2>
-            <div class="text-add-box">
-                <input type="text" id="input-box" placeholder="add text...">
-                <button class="add-btn">Add</button>
-            </div>
-            <ul class="list-container">
-                <!-- <li class="checked">li1</li>
+      <div class="todo-app">
+        <h2>
+          To-do List
+          <img src="./assets/images/todo-list.png" class="to-do-img" alt="" />
+        </h2>
+        <div class="text-add-box">
+          <input type="text" id="input-box" placeholder="add text..." />
+          <button class="add-btn" onclick="addText()">Add</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">li1</li>
                 <li>li2</li>
                 <li>li3</li> continue at 13min -->
-            </ul>
-        </div>
+        </ul>
+      </div>
     </div>
 
     <!-- JavaScript script -->
