@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 html,body{
   height: 100%;
@@ -11,15 +15,16 @@ html,body{
 }
 .container{
     height: 100vh;
-    background: linear-gradient(135deg, red,blue);
-    padding: 10px;
+    background-color: #EEEEEE;
+    /* background: linear-gradient(135deg, red,blue); */
+    padding: 1px;
 }
 .todo-app{
     width:100%;
     max-width: 540px ;
     background-color: #fff;
     border-radius: 20px;
-    margin: 100px auto;
+    margin: 50px auto;
     padding: 50px;
 }
 .todo-app h2{
@@ -28,49 +33,51 @@ html,body{
     margin-bottom: 20px;
 }
 .todo-app h2 img{
-    width: 25px;
-    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
 }
 .text-add-box{
     width:100%;
-    height: 30px;
+    height: 40px;
     background-color: rgb(185, 185, 185);
     display: flex;
     justify-content: space-between;
-    padding-left: 10px;
+    padding-left: 5px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 .text-add-box input{
-    flex: 1;
+    width: 100%;
+    /* flex: 1; */
     background-color: transparent;
     border: none;
     outline: none;
-    color: #fff;
-    font-weight: 16px;
+    color: #000;
+    font-weight: 21px;
     padding: 10px;
 }
 .add-btn{
     border: none;
-    padding: 15px 45px;
+    padding: 5px 45px;
     border-radius: 30px;
-    background-color: aquamarine;
-    font-size: 16px;
+    background-color: #00ADB5;
+    font-size: 18px;
     cursor: pointer;
 }
 ul li{
     user-select: none;
     list-style: none;
     font-size: 16px;
-    padding: 10px 15px;
+    padding: 8px 30px;
     cursor: pointer;
     position: relative;
 }
 ul li::before{
-    content: " ";
+    content: "";
     position: absolute;
-    top: 9px;
-    left: -10px;
+    top: 11px;
+    left: 2px;
     height: 20px;
     width: 20px;
     background-image: url("./assets/images/unchecked.png");
@@ -79,7 +86,7 @@ ul li::before{
 }
 
 ul li.checked{
-    color: rgb(51, 51, 51);
+    color: black;
     text-decoration: line-through;
 }
 ul li.checked::before{
@@ -93,9 +100,15 @@ ul li span{
     width: 40px;
     text-align: center; 
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 40px;
 }
 ul li span:hover{
-    background-color: rgba(0, 0, 0, 0.144);
+    background-color: #393E46;
+}
+@media (width<400px) {
+    .add-btn{
+    padding: 5px 15px;
+    font-size: 18px;
+    }
 }
