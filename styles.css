@@ -16,11 +16,9 @@ html,body{
 .container{
     height: 100vh;
     background-color: #EEEEEE;
-    /* background: linear-gradient(135deg, red,blue); */
     padding: 1px;
 }
 .todo-app{
-    width:100%;
     max-width: 540px ;
     background-color: #fff;
     border-radius: 20px;
